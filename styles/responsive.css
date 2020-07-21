@@ -1,0 +1,50 @@
+@media (max-width: 1570px) {
+  #navbar {
+    width: 250px;
+  }
+  #navbar > header > h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    grid-template-areas:
+      "nav"
+      "main";
+  }
+
+  #navbar.hide {
+    height: 6.2rem;
+    overflow-y: hidden;
+  }
+
+  #navbar::after {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    content: "MENU";
+    width: max-content;
+    height: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: rgb(231, 166, 25);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 3px;
+    z-index: 500;
+  }
+
+  #navbar {
+    margin-top: 2rem;
+    width: 100vw;
+    overflow-x: hidden;
+    height: max-content;
+    position: relative;
+  }
+
+  #main-doc {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
